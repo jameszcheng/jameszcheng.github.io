@@ -1,0 +1,22 @@
+/* stylesheet.css — Jon Barron / Tian-style */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+html, body { margin:0; padding:0; background:#fff; color:#222; }
+body, td, tr, p, li, a, name, heading, papertitle {
+  font-family: 'Lato','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+a { color:#1772d0; text-decoration:none; }
+a:hover { text-decoration:underline; color:#f09228; }
+
+table { border:0; border-spacing:0; border-collapse:separate; }
+name { font-size:40px; font-weight:700; }
+heading { font-size:28px; font-weight:700; }
+papertitle { font-weight:700; }
+
+.one { position:relative; }
+.two { position:absolute; top:0; left:0; opacity:0; transition:opacity .2s ease-in-out; }
+
+img { border-radius:6px; }
