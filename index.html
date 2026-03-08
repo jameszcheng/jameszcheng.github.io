@@ -2,11 +2,12 @@
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
   <title>James Cheng</title>
-  
+
   <meta name="author" content="James Cheng">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link rel="stylesheet" type="text/css" href="stylesheet.css?v=1">
+
+  <link rel="stylesheet" type="text/css" href="stylesheet.css?v=2">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
 </head>
 
@@ -20,41 +21,17 @@
               <p style="text-align:center">
                 <span class="name">James Cheng</span>
               </p>
-              <p>I am a Master’s student in Computer Science at Stanford University. Previously, I obtained Bachelor's degrees in Computer Science and Business Administration from UC Berkeley, where I was a Regents' and Chancellor's Scholar. I was very fortunate to work with <a href=https://www2.eecs.berkeley.edu/Faculty/Homepages/sastry.html>Prof. Shankar Sastry</a> and <a href=https://chinmaheshwari.github.io/chinmay.maheshwari/>Chinmay Maheshwari</a> on optimization and game theory research in traffic networks.</p>
-              <p>I am interested in machine learning and engineering in robotics with the goal of improving real-world applicability to help humans do a wide range of tasks.</p>
+              <p>I am a Master's student in Computer Science at Stanford University. Previously, I obtained Bachelor's degrees in Computer Science and Business Administration from UC Berkeley, where I was a Regents' and Chancellor's Scholar.</p>
+              <p>I am interested in data curation and reinforcement learning for improving reasoning in language models.</p>
               <p style="text-align:center">
-                <a href="mailto:jamescheng@stanford.edu">Email</a> &nbsp/&nbsp
+                <a href="mailto:jzcheng@stanford.edu">Email</a> &nbsp/&nbsp
                 <a href="https://scholar.google.com/citations?user=2LfB294AAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
+                <a href="https://github.com/jameszcheng">GitHub</a> &nbsp/&nbsp
                 <a href="https://linkedin.com/in/jamescheng24">LinkedIn</a>
               </p>
             </td>
             <td style="padding:2.5%;width:40%;max-width:40%">
               <a href="images/james_headshot.JPG"><img style="width:100%;max-width:100%" alt="profile photo" src="images/james_headshot.JPG" class="hoverZoomLink"></a>
-            </td>
-          </tr>
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <h2>Industry Experience</h2>
-            </td>
-          </tr>
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-		  <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src='images/amazon_logo.jpg' width="160" alt="Amazon logo">
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <span class="papertitle">Software Engineer Intern</span>
-              <br>
-              Amazon
-              <br>
-              <em>Sunnyvale, CA</em>, Summer 2025
-              <br>
-              <p>
-                Developed an AI image generation feature on Kindle device.
-              </p>
             </td>
           </tr>
         </tbody></table>
@@ -77,7 +54,7 @@
                 <span class="papertitle">Follower Agnostic Methods for Stackelberg Games</span>
               </a>
               <br>
-              Chinmay Maheshwari, <strong>James Cheng</strong>, S Shankar Sasty, Lillian Ratliff, Eric Mazumdar
+              Chinmay Maheshwari, <strong>James Cheng</strong>, S Shankar Sastry, Lillian Ratliff, Eric Mazumdar
               <br>
               <em>CDC</em>, 2024
               <br>
@@ -86,8 +63,38 @@
               <a href="https://arxiv.org/abs/2302.01421">arXiv</a>
               <p></p>
               <p>
-			  Methods for leader–follower (Stackelberg) games with follower-agnostic guarantees.
+			  Methods for leader-follower (Stackelberg) games with follower-agnostic guarantees.
               </p>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <h2>Projects</h2>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+		  <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <span class="papertitle"><i class="fa-solid fa-list-check"></i> Constrained Text Generation Benchmark</span>
+              <br>
+              <p>Designed a 348-prompt benchmark (local, global, and hybrid constraints) with dual-path verification to quantify autoregressive constraint-following limitations across 6 LLMs on 7,889 expanded variants. Built SFT and DPO fine-tuning pipelines and meta-ablation analyses, confirming a steep difficulty gradient driven by planning bottlenecks.</p>
+            </td>
+          </tr>
+		  <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <span class="papertitle"><i class="fa-solid fa-magnifying-glass"></i> MuSR: Murder Mystery Reasoning Benchmark</span>
+              <br>
+              <p>Extended the MuSR benchmark (ICLR 2024 Spotlight) with dynamic belief update and counterfactual reasoning tracks, generating graph-structured mystery datasets to evaluate multi-step logical deduction in LLMs. Built streaming evaluation pipeline testing how models revise predictions across evidence rounds.</p>
+            </td>
+          </tr>
+		  <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <span class="papertitle"><i class="fa-solid fa-gamepad"></i> LLM-as-Planner vs RL on Procgen</span>
+              <br>
+              <p>Built hybrid RL-LLM agents with entropy-based mode switching, boosting task success rates up to 2x over RL-only baselines (PPO, DQN) across procedurally generated environments.</p>
             </td>
           </tr>
         </tbody></table>
