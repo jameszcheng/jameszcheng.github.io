@@ -1,129 +1,292 @@
-/* ===== Lato font faces (same as Jon Barron) ===== */
-/* latin-ext */
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Lato Italic'), local('Lato-Italic'),
-       url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAUi-qNiXg7eU0.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Lato Italic'), local('Lato-Italic'),
-       url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAXC-qNiXg7Q.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Lato Bold Italic'), local('Lato-BoldItalic'),
-       url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_FQftx9897sxZ.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Lato Bold Italic'), local('Lato-BoldItalic'),
-       url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_Gwftx9897g.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Lato Regular'), local('Lato-Regular'),
-       url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjxAwXiWtFCfQ7A.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Lato Regular'), local('Lato-Regular'),
-       url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Lato Bold'), local('Lato-Bold'),
-       url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwaPGQ3q5d0N7w.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Lato Bold'), local('Lato-Bold'),
-       url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+/* ===== Terminal Portfolio Stylesheet ===== */
+/* Zero external dependencies — system monospace fonts only */
+
+/* ===== CSS Variables ===== */
+:root {
+  --bg: #0d1117;
+  --bg-card: #161b22;
+  --border: #30363d;
+  --text: #c9d1d9;
+  --text-muted: #8b949e;
+  --green: #3fb950;
+  --cyan: #58a6ff;
+  --yellow: #d29922;
+  --magenta: #bc8cff;
+  --red: #f85149;
+  --font-mono: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', ui-monospace, 'SF Mono', 'Menlo', 'Consolas', monospace;
+  --max-width: 760px;
 }
 
-/* ===== Core styles (with support for custom tags *and* classes) ===== */
-a { color:#1772d0; text-decoration:none; }
-a:focus, a:hover { color:#f09228; text-decoration:none; }
+/* ===== Reset & Base ===== */
+*, *::before, *::after { box-sizing: border-box; }
 
-body, td, th, tr, p, a,
-name, heading, papertitle,
-.name, .heading, .papertitle {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+body {
+  margin: 0;
+  padding: 24px 20px 60px;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-mono);
   font-size: 14px;
-  line-height: 1.6;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
 }
 
-strong { font-family:'Lato', Verdana, Helvetica, sans-serif; font-size:14px; }
+/* ===== Layout ===== */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
 
+/* ===== Terminal Window Chrome ===== */
+.terminal {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.terminal-header {
+  background: var(--border);
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.terminal-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+.terminal-dot.red { background: var(--red); }
+.terminal-dot.yellow { background: var(--yellow); }
+.terminal-dot.green { background: var(--green); }
+
+.terminal-title {
+  color: var(--text-muted);
+  font-size: 12px;
+  margin-left: 8px;
+  font-family: var(--font-mono);
+}
+
+.terminal-body {
+  padding: 24px;
+}
+
+/* ===== ASCII Name Banner ===== */
+.ascii-name {
+  margin: 0 0 16px;
+  color: var(--green);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  line-height: 1.15;
+  overflow-x: auto;
+}
+
+/* ===== Header / Intro ===== */
+
+.bio p {
+  margin: 8px 0;
+  color: var(--text);
+}
+
+/* ===== Links ===== */
+a {
+  color: var(--cyan);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover, a:focus {
+  color: var(--yellow);
+}
+
+.links {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+}
+
+.links a {
+  color: var(--cyan);
+}
+
+.links a::before {
+  content: '> ';
+  color: var(--text-muted);
+}
+
+/* ===== Section Headers ===== */
 h2 {
-  margin:0;
-  font-weight: normal;
-  font-family:'Lato', Verdana, Helvetica, sans-serif;
-  font-size:22px;
+  font-family: var(--font-mono);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--yellow);
+  margin: 0;
+  padding: 0;
 }
 
-/* Title text (supports <papertitle> or class="papertitle") */
-papertitle, .papertitle {
-  font-family:'Lato', Verdana, Helvetica, sans-serif;
-  font-size:14px;
-  font-weight:700;
+h2::before {
+  content: '# ';
+  color: var(--text-muted);
 }
 
-/* Big name header (supports <name> or class="name") */
-name, .name {
-  padding-top:20px;
-  margin:0;
-  font-family:'Lato', Verdana, Helvetica, sans-serif;
-  font-size:32px; /* Jon's template uses ~32px */
+.section-header {
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px dashed var(--border);
 }
 
-/* Thumb/hover helpers (from the template) */
-.one { width:160px; height:160px; position:relative; }
-.two {
-  width:160px; height:160px; position:absolute;
-  transition:opacity .2s ease-in-out;
-  -moz-transition:opacity .2s ease-in-out;
-  -webkit-transition:opacity .2s ease-in-out;
-}
-.fade {
-  transition:opacity .2s ease-in-out;
-  -moz-transition:opacity .2s ease-in-out;
-  -webkit-transition:opacity .2s ease-in-out;
+/* ===== Research Entry ===== */
+.research-entry {
+  display: flex;
+  gap: 20px;
+  padding: 16px 0;
 }
 
-span.highlight { background-color:#ffffd0; }
+.research-thumb {
+  width: 140px;
+  flex-shrink: 0;
+}
 
-.colored-box {
-  color:black; padding:20px; display:inline-block; border-radius:10px;
+.research-thumb img {
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+.research-info {
+  flex: 1;
+}
+
+.papertitle {
+  font-weight: 700;
+  color: var(--cyan);
+}
+
+.papertitle a {
+  color: var(--cyan);
+}
+
+.authors {
+  color: var(--text-muted);
+  margin: 4px 0;
+  font-size: 13px;
+}
+
+.authors strong {
+  color: var(--green);
+  font-family: var(--font-mono);
+}
+
+.venue {
+  font-style: italic;
+  color: var(--magenta);
+  font-size: 13px;
+}
+
+.paper-links {
+  margin-top: 6px;
+  font-size: 13px;
+}
+
+.paper-links a {
+  color: var(--cyan);
+}
+
+.paper-links a::before {
+  content: '[';
+  color: var(--text-muted);
+}
+.paper-links a::after {
+  content: ']';
+  color: var(--text-muted);
+}
+
+.paper-desc {
+  color: var(--text-muted);
+  margin: 8px 0 0;
+  font-size: 13px;
+}
+
+/* ===== Project Entry ===== */
+.project-entry {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.project-entry:last-child {
+  border-bottom: none;
+}
+
+.project-title {
+  font-weight: 700;
+  color: var(--green);
+}
+
+/* Inline SVG icons in project titles */
+.icon {
+  width: 16px;
+  height: 16px;
+  vertical-align: text-bottom;
+  margin-right: 6px;
+  color: var(--yellow);
+}
+
+.project-desc {
+  color: var(--text-muted);
+  margin: 6px 0 0;
+  font-size: 13px;
+}
+
+.project-links {
+  margin-top: 6px;
+  font-size: 13px;
+}
+
+.project-links a::before {
+  content: '[';
+  color: var(--text-muted);
+}
+.project-links a::after {
+  content: ']';
+  color: var(--text-muted);
+}
+
+/* ===== Footer ===== */
+.footer {
+  text-align: right;
+  color: var(--text-muted);
+  font-size: 12px;
+  padding-top: 12px;
+}
+
+.footer a {
+  color: var(--text-muted);
+}
+
+.footer a:hover {
+  color: var(--cyan);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+  .links {
+    justify-content: center;
+  }
+
+  .research-entry {
+    flex-direction: column;
+  }
+
+  .research-thumb {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .name {
+    font-size: 22px;
+  }
 }
