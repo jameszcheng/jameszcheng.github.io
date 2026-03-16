@@ -235,6 +235,13 @@ h2::before {
   color: var(--yellow);
 }
 
+.project-hook {
+  color: var(--text);
+  margin: 6px 0 0;
+  font-size: 13px;
+  font-style: italic;
+}
+
 .project-desc {
   color: var(--text-muted);
   margin: 6px 0 0;
